@@ -1,0 +1,25 @@
+{
+  "name": "cmm",
+  "displayName": "C-- Language Support",
+  "description": "Yet another programming language featuring the letter \"C\"",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "c--",
+      "aliases": ["C--", "c--"],
+      "extensions": [".cmm",".c--"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "c--",
+      "scopeName": "source.cmm",
+      "path": "./syntaxes/c--.tmLanguage.json"
+    }]
+  }
+}
